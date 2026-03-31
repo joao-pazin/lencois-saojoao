@@ -38,7 +38,7 @@ body { font-family:var(--fb); background:var(--cream); color:var(--dark); overfl
 .hero {
   min-height:100vh;
   background: linear-gradient(175deg,rgba(30,22,14,.65) 0%,rgba(30,22,14,.25) 55%,rgba(30,22,14,.75) 100%),
-    url('FOTO_HERO') center/cover no-repeat;
+    url('./hero.jpg') center/cover no-repeat;
   background-color:var(--brown);
   display:flex; flex-direction:column; align-items:center; justify-content:center;
   text-align:center; padding:120px 24px 80px; position:relative; overflow:hidden;
@@ -157,7 +157,7 @@ body { font-family:var(--fb); background:var(--cream); color:var(--dark); overfl
 .hosp-section { background:var(--dark); }
 .hosp-section .tag { color:var(--sand); }
 .hosp-grid { display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:center; }
-.hosp-foto { border-radius:20px; overflow:hidden; aspect-ratio:4/5; background:url('FOTO_HOSPEDAGEM') center/cover no-repeat; background-color:var(--brown); position:relative; }
+.hosp-foto { border-radius:20px; overflow:hidden; aspect-ratio:4/5; background:url('./hospedagem.jpg') center/cover no-repeat; background-color:var(--brown); position:relative; }
 .hosp-foto::after { content:'📸 foto da hospedagem'; position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font-size:12px; font-weight:700; color:rgba(255,255,255,.6); background:rgba(0,0,0,.3); }
 .hosp-foto.ok::after { display:none; }
 .hosp-cards { display:flex; flex-direction:column; gap:16px; }
@@ -168,7 +168,7 @@ body { font-family:var(--fb); background:var(--cream); color:var(--dark); overfl
 
 /* GUIAS */
 .guias-grid { display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:center; }
-.guias-foto { border-radius:20px; overflow:hidden; aspect-ratio:4/3; background:url('FOTO_GUIAS') center/cover no-repeat; background-color:var(--green); position:relative; }
+.guias-foto { border-radius:20px; overflow:hidden; aspect-ratio:4/3; background:url('./guias.jpg') center/cover no-repeat; background-color:var(--green); position:relative; }
 .guias-foto::after { content:'📸 foto dos guias'; position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font-size:12px; font-weight:700; color:rgba(255,255,255,.6); background:rgba(0,0,0,.25); }
 .guias-foto.ok::after { display:none; }
 .guias-text { font-size:17px; color:#555; line-height:1.85; margin-bottom:18px; }
@@ -315,7 +315,7 @@ footer a { color:var(--coral); text-decoration:none; }
         <p class="pati-text">Em 3 dias de trekking, a experiência vai além da caminhada: é uma imersão profunda na natureza, em si mesmo e na consciência ecológica. <strong>É um daqueles lugares que te transformam.</strong></p>
       </div>
       <!-- FOTO_PATI: troque a URL abaixo -->
-      <div class="foto-ph" style="aspect-ratio:4/5; background-image:url('FOTO_PATI');"></div>
+      <div class="foto-ph ok" style="aspect-ratio:4/5; background-image:url('./pati.jpg');"></div>
     </div>
   </div>
 </div>
@@ -331,7 +331,7 @@ footer a { color:var(--coral); text-decoration:none; }
       <div class="dia-card">
         <div class="dia-header"><span class="dia-num">01</span><span class="dia-km">10 km</span></div>
         <!-- FOTO_DIA1: troque a URL abaixo -->
-        <div class="dia-foto" style="background-image:url('FOTO_DIA1');"></div>
+        <div class="dia-foto ok" style="background-image:url('./dia1.jpg');" class="dia-foto ok"></div>
         <div class="dia-body">
           <h3 class="dia-title">Subida dos Aleixos, Gerais do Rio Preto e Mirante do Pati</h3>
           <ul class="dia-list">
@@ -349,7 +349,7 @@ footer a { color:var(--coral); text-decoration:none; }
       <div class="dia-card">
         <div class="dia-header"><span class="dia-num">02</span><span class="dia-km">12 km</span></div>
         <!-- FOTO_DIA2: troque a URL abaixo -->
-        <div class="dia-foto" style="background-image:url('FOTO_DIA2');"></div>
+        <div class="dia-foto ok" style="background-image:url('./dia2.jpg');"></div>
         <div class="dia-body">
           <h3 class="dia-title">Morro do Castelo e Cachoeiras do Funil</h3>
           <ul class="dia-list">
@@ -366,7 +366,7 @@ footer a { color:var(--coral); text-decoration:none; }
       <div class="dia-card">
         <div class="dia-header"><span class="dia-num">03</span><span class="dia-km">18 km</span></div>
         <!-- FOTO_DIA3: troque a URL abaixo -->
-        <div class="dia-foto" style="background-image:url('FOTO_DIA3');"></div>
+        <div class="dia-foto ok" style="background-image:url('./dia3.jpg');"></div>
         <div class="dia-body">
           <h3 class="dia-title">Cachoeirão por Cima e saída pelo Guiné</h3>
           <ul class="dia-list">
@@ -392,7 +392,7 @@ footer a { color:var(--coral); text-decoration:none; }
     <div class="food-grid">
       <div class="food-card">
         <!-- FOTO_COMIDA_1: café da manhã -->
-        <div class="food-foto" style="background-image:url('FOTO_COMIDA_1');"></div>
+        <div class="food-foto ok" style="background-image:url('./comida1.jpg');"></div>
         <div class="food-body">
           <p class="food-title">Café da manhã típico</p>
           <p class="food-desc">Ovos, pão, frutas, cuscuz, tapioca e café passado na hora.</p>
@@ -400,7 +400,7 @@ footer a { color:var(--coral); text-decoration:none; }
       </div>
       <div class="food-card">
         <!-- FOTO_COMIDA_2: piquenique -->
-        <div class="food-foto" style="background-image:url('FOTO_COMIDA_2');"></div>
+        <div class="food-foto ok" style="background-image:url('./comida2.jpg');"></div>
         <div class="food-body">
           <p class="food-title">Almoço piquenique</p>
           <p class="food-desc">Monte seu sanduíche com queijo, presunto e salada. Acompanha frutas, biscoitos e café.</p>
@@ -408,7 +408,7 @@ footer a { color:var(--coral); text-decoration:none; }
       </div>
       <div class="food-card">
         <!-- FOTO_COMIDA_3: jantar -->
-        <div class="food-foto" style="background-image:url('FOTO_COMIDA_3');"></div>
+        <div class="food-foto ok" style="background-image:url('./comida3.jpg');"></div>
         <div class="food-body">
           <p class="food-title">Jantar</p>
           <p class="food-desc">Arroz, feijão, macarrão, legumes, carne ou frango, salada e farofa.</p>
@@ -422,7 +422,7 @@ footer a { color:var(--coral); text-decoration:none; }
 <div class="hosp-section">
   <div class="wrap section reveal">
     <div class="hosp-grid">
-      <div class="hosp-foto"></div>
+      <div class="hosp-foto ok"></div>
       <div>
         <span class="tag" style="color:var(--sand);">Onde vamos dormir</span>
         <h2 class="section-title white">Na <em>casa dos nativos</em></h2>
@@ -472,7 +472,7 @@ footer a { color:var(--coral); text-decoration:none; }
         <p class="guias-text">Eles têm boa energia e alto astral, são animados, e têm muito conhecimento sobre a cultura, a história, a geologia e a biodiversidade da Chapada Diamantina. Isso faz toda a diferença na experiência.</p>
         <p class="guias-text" style="font-style:italic; color:var(--brown);">Não deixe de fazer qualquer pergunta sobre a Chapada — eles são apaixonados pelo que fazem.</p>
       </div>
-      <div class="guias-foto"></div>
+      <div class="guias-foto ok"></div>
     </div>
   </div>
 </div>
@@ -638,7 +638,7 @@ footer a { color:var(--coral); text-decoration:none; }
     </div>
     <div class="contato-info">
       <span>📞 (75) 99869-4091</span>
-      <span>📧 lencoistrekking@gmail.com</span>
+      <span>📧 <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="6f030a010c00061c1b1d0a04040601082f08020e0603410c0002">[email&#160;protected]</a></span>
       <span>🌐 lencoistrekking.com</span>
     </div>
   </div>
@@ -650,11 +650,5 @@ footer a { color:var(--coral); text-decoration:none; }
   <p class="footer-slogan">A vida começa fora da rota.</p>
 </footer>
 
-<script>
-  const obs = new IntersectionObserver((entries) => {
-    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
-  }, { threshold: 0.1 });
-  document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
-</script>
-</body>
-</html>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  const obs = new Intersectio
